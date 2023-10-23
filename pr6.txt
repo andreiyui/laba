@@ -1,0 +1,21 @@
+#include <iostream>
+
+bool isPowerOfTwo(int number) {
+   
+    return (number > 0) && ((number & (number - 1)) == 0);
+}
+
+int main() {
+    int number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
+
+    
+    if (isPowerOfTwo(number)) {
+        std::cout << number << " является степенью двойки." << std::endl;
+    } else {
+        std::cout << number << " не является степенью двойки." << std::endl;
+    }
+
+    return 0;
+}
