@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    int number;
+    std::cout << "Введите число: ";
+    std::cin >> number;
+
+    if (number > 0) {
+        std::cout << "Число является положительным.\n";
+    } else if (number < 0) {
+        std::cout << "Число является отрицательным.\n";
+    } else {
+        std::cout << "Число является нулем.\n";
+    }
+
+    return 0;
+}
