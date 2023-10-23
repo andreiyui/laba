@@ -1,0 +1,25 @@
+#include <iostream>
+
+bool isCentury(int year) {
+    
+    for (int i = 0; i <= year; i += 100) {
+        if (i == year) {
+            return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    int year;
+    std::cout << "Введите год: ";
+    std::cin >> year;
+
+    if (isCentury(year)) {
+        std::cout << year << " является годом, кратным 100 (веком)." << std::endl;
+    } else {
+        std::cout << year << " не является годом, кратным 100 (веком)." << std::endl;
+    }
+
+    return 0;
+}
